@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/logostart"
+    tools:context=".Home"
+    android:theme="@style/Theme.AppCompat" >
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+<!--    <GridView-->
+<!--        android:id="@+id/lvtin"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="664dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:paddingLeft="30dp"-->
+<!--        android:paddingRight="30dp"-->
+<!--        android:verticalSpacing="20dp" />-->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu"
+        android:background="@color/teal_200"
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

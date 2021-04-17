@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/actiontrangchu"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/action_trangchu" />
+
+<!--    <item-->
+<!--        android:id="@+id/actiontour"-->
+<!--        android:icon="@drawable/ic_baseline_tour_24"-->
+<!--        android:title="@string/action_tour" />-->
+
+    <item
+        android:id="@+id/actionqllt"
+        android:icon="@drawable/ic_baseline_share_location_24"
+        android:title="Quản lý" />
+    <item
+        android:id="@+id/actiontk"
+        android:icon="@drawable/ic_baseline_add_location_24"
+        android:title="Tìm kiếm" />
+
+
+</menu>

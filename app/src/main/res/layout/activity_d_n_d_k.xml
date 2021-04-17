@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logostart"
+    tools:context=".DNDK">
+
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="200dp"-->
+        <!--            android:layout_height="200dp"-->
+        <!--            android:src="@drawable/logo3"/>-->
+        <TextView
+            android:id="@+id/txtSlogan"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:text="@string/slogan"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginBottom="12dp"
+        android:text="Đăng ký" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toRightOf="@+id/btnSignUp"
+        android:text="Đăng nhập" />
+
+
+</RelativeLayout>

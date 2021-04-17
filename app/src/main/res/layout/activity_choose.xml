@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ch"
+    tools:context=".Choose">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginBottom="100dp"
+            android:src="@drawable/back_home_foreground"
+            android:layout_width="54dp"
+            android:layout_height="54dp"/>
+<!--        <androidx.cardview.widget.CardView-->
+
+<!--            android:layout_gravity="center"-->
+<!--            app:cardElevation="8dp"-->
+<!--            app:cardCornerRadius="120dp"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="150dp">-->
+            <ImageView
+
+                android:layout_gravity="center"
+                android:src="@drawable/logomain"
+                android:layout_width="180dp"
+                android:layout_height="180dp"/>
+<!--        </androidx.cardview.widget.CardView>-->
+        <Button
+            android:text="thêm lịch trình"
+            android:id="@+id/btnTlt"
+            android:shadowDy="-1"
+            android:shadowDx="-1"
+            android:shadowRadius="1"
+            android:textColor="@android:color/background_light"
+            android:shadowColor="@android:color/background_light"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/custom_button"
+            android:layout_marginTop="55dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="lịch trình đã qua"
+            android:id="@+id/btnLtdq"
+            android:shadowDy="-1"
+            android:shadowDx="-1"
+            android:shadowRadius="1"
+            android:textColor="@android:color/background_light"
+            android:shadowColor="@android:color/background_light"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/custom_button"
+            android:layout_marginTop="55dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

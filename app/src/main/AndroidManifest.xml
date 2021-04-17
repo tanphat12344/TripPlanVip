@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tripplan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/lgmain"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TripPlan">
+        <activity android:name=".Timkiem"></activity>
+        <activity android:name=".Quanly" />
+        <activity android:name=".Dnqln" />
+        <activity android:name=".Home" />
+        <activity android:name=".custom_info" />
+        <activity android:name=".Lichtrinhdaqua" />
+        <activity android:name=".Choose" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".SignIn" />
+        <activity android:name=".DNDK" /> <!-- <activity android:name=".Home"></activity> -->
+        <activity android:name=".QLN" />
+        <activity android:name=".QLLT" />
+        <activity android:name=".TourDetail" />
+        <activity android:name=".TourList" />
+        <activity android:name=".Intro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDSWZE-t5TZoWhZ283yf8K0lrY_bvm_ajY" />
+    </application>
+
+</manifest>

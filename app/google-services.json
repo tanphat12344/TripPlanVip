@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "168270670611",
+    "project_id": "tripplan-7dddb",
+    "storage_bucket": "tripplan-7dddb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168270670611:android:9c6827f95753338ed4c8e6",
+        "android_client_info": {
+          "package_name": "com.example.tripplan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168270670611-5s4ee6svtusb60hi6vdoj7p25nd9hpaq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tripplan",
+            "certificate_hash": "5328d28891c128e474fb78d9fc0e3eafe230e357"
+          }
+        },
+        {
+          "client_id": "168270670611-fd29668i8eikuhub489cgrpc5sjdu6lr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoJxZ__huEgRJl12uRrdF6oSHwr49Xc4Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168270670611-fd29668i8eikuhub489cgrpc5sjdu6lr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
