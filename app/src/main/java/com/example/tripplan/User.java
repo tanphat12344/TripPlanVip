@@ -4,7 +4,7 @@ public class User {
     private String id;
     private String Name;
     private String Password;
-    private Long groupId;
+    private String groupId;
 
     public User() {
     }
@@ -39,11 +39,11 @@ public class User {
         Password = password;
     }
 
-    public Long getGroupId() {
+    public String getGroupId() {
         return groupId;
     }
 
-    public void setGroupId(Long groupId) {
+    public void setGroupId(String groupId) {
         this.groupId = groupId;
     }
 

@@ -93,7 +93,7 @@ public class Home extends AppCompatActivity {
 //                        startActivity(new Intent(getApplicationContext(),Tour.class));
 //                        overridePendingTransition(0,0);
 //                        return true;
-                    case R.id.actionqllt:
+                    case R.id.actionql:
                         startActivity(new Intent(getApplicationContext(),DNDK.class));
                         overridePendingTransition(0,0);
                         return true;

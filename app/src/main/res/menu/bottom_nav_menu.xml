@@ -13,13 +13,13 @@
 <!--        android:title="@string/action_tour" />-->
 
     <item
-        android:id="@+id/actionqllt"
+        android:id="@+id/actionql"
         android:icon="@drawable/ic_baseline_share_location_24"
         android:title="Quản lý" />
     <item
         android:id="@+id/actiontk"
-        android:icon="@drawable/ic_baseline_add_location_24"
-        android:title="Tìm kiếm" />
+        android:icon="@drawable/ic_baseline_directions_24"
+        android:title="Chỉ đường" />
 
 
 </menu>

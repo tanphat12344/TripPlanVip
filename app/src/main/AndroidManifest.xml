@@ -5,10 +5,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
 
-    <meta-data
-        android:name="com.google.android.gms.version"
-        android:value="@integer/google_play_services_version" />
 
     <application
         android:allowBackup="true"
@@ -17,7 +15,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TripPlan">
-        <activity android:name=".Timkiem"></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDSWZE-t5TZoWhZ283yf8K0lrY_bvm_ajY" />
+
+        <activity android:name=".TaoNhom"></activity>
+        <activity android:name=".ViTriNhom" />
+        <activity android:name=".Timkiem" />
         <activity android:name=".Quanly" />
         <activity android:name=".Dnqln" />
         <activity android:name=".Home" />
@@ -38,10 +46,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDSWZE-t5TZoWhZ283yf8K0lrY_bvm_ajY" />
     </application>
 
 </manifest>

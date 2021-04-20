@@ -65,7 +65,7 @@ public class Lichtrinhdaqua extends AppCompatActivity implements OnMapReadyCallb
 
         //hienfamentactivity
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom);
-        bottomNavigationView.setSelectedItemId(R.id.actionqllt);
+        bottomNavigationView.setSelectedItemId(R.id.actionql);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -78,11 +78,11 @@ public class Lichtrinhdaqua extends AppCompatActivity implements OnMapReadyCallb
 //                        startActivity(new Intent(getApplicationContext(),Tour.class));
 //                        overridePendingTransition(0,0);
 //                        return true;
-                    case R.id.actionqllt:
+                    case R.id.actionql:
 
                         return true;
                     case R.id.actiontk:
-                        startActivity(new Intent(getApplicationContext(),QLN.class));
+                        startActivity(new Intent(getApplicationContext(),Timkiem.class));
                         overridePendingTransition(0,0);
                         return true;
 

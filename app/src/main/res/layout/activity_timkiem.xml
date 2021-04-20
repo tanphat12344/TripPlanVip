@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/et_source"
-        android:hint="Enter Source Location"
+        android:hint="Vị trí bắt đầu"
         android:padding="12dp"
         android:background="@android:drawable/editbox_background">
 
@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/et_destination"
-        android:hint="Enter Destionnation Location"
+        android:hint="Vị trí kết thúc"
         android:padding="12dp"
         android:layout_marginTop="8dp"
         android:background="@android:drawable/editbox_background"
@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bt_track"
-        android:text="display track"
+        android:text="Chỉ đường"
         android:layout_marginTop="16dp"
         />
 

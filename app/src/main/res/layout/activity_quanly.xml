@@ -4,69 +4,133 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ch"
+    android:background="@drawable/logostart2"
     tools:context=".Quanly">
 
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <ImageView
-            android:id="@+id/back"
-            android:layout_marginBottom="100dp"
-            android:src="@drawable/back_home_foreground"
-            android:layout_width="54dp"
-            android:layout_height="54dp"/>
-        <!--        <androidx.cardview.widget.CardView-->
 
-        <!--            android:layout_gravity="center"-->
-        <!--            app:cardElevation="8dp"-->
-        <!--            app:cardCornerRadius="120dp"-->
-        <!--            android:layout_width="150dp"-->
-        <!--            android:layout_height="150dp">-->
-        <ImageView
 
-            android:layout_gravity="center"
-            android:src="@drawable/logomain"
-            android:layout_width="180dp"
-            android:layout_height="180dp"/>
-        <!--        </androidx.cardview.widget.CardView>-->
-        <Button
-            android:text="quản lý lịch trình"
-            android:id="@+id/btncqllt"
-            android:shadowDy="-1"
-            android:shadowDx="-1"
-            android:shadowRadius="1"
-            android:textColor="@android:color/background_light"
-            android:shadowColor="@android:color/background_light"
-            android:textStyle="bold"
-            android:textSize="19sp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:background="@drawable/custom_button"
-            android:layout_marginTop="55dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+<!--    <LinearLayout-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--        <ImageView-->
+<!--            android:id="@+id/back"-->
+<!--            android:layout_marginBottom="100dp"-->
+<!--            android:src="@drawable/back_home_foreground"-->
+<!--            android:layout_width="54dp"-->
+<!--            android:layout_height="54dp"/>-->
+<!--        &lt;!&ndash;        <androidx.cardview.widget.CardView&ndash;&gt;-->
 
-        <Button
-            android:text="quản lý nhóm"
-            android:id="@+id/btncqln"
-            android:shadowDy="-1"
-            android:shadowDx="-1"
-            android:shadowRadius="1"
-            android:textColor="@android:color/background_light"
-            android:shadowColor="@android:color/background_light"
-            android:textStyle="bold"
-            android:textSize="19sp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:background="@drawable/custom_button"
-            android:layout_marginTop="55dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
+<!--        &lt;!&ndash;            android:layout_gravity="center"&ndash;&gt;-->
+<!--        &lt;!&ndash;            app:cardElevation="8dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            app:cardCornerRadius="120dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_width="150dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_height="150dp">&ndash;&gt;-->
+<!--        &lt;!&ndash;        </androidx.cardview.widget.CardView>&ndash;&gt;-->
+<!--        <ImageView-->
 
+<!--            android:layout_width="180dp"-->
+<!--            android:layout_height="180dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:src="@drawable/logomain" />-->
+
+<!--        <Button-->
+<!--            android:text="quản lý lịch trình"-->
+<!--            android:id="@+id/btncqllt"-->
+<!--            android:shadowDy="-1"-->
+<!--            android:shadowDx="-1"-->
+<!--            android:shadowRadius="1"-->
+<!--            android:textColor="@android:color/background_light"-->
+<!--            android:shadowColor="@android:color/background_light"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="19sp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            android:layout_marginRight="50dp"-->
+<!--            android:background="@drawable/custom_button"-->
+<!--            android:layout_marginTop="55dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+<!--        <Button-->
+<!--            android:text="quản lý nhóm"-->
+<!--            android:id="@+id/btncqln"-->
+<!--            android:shadowDy="-1"-->
+<!--            android:shadowDx="-1"-->
+<!--            android:shadowRadius="1"-->
+<!--            android:textColor="@android:color/background_light"-->
+<!--            android:shadowColor="@android:color/background_light"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="19sp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            android:layout_marginRight="50dp"-->
+<!--            android:background="@drawable/custom_button"-->
+<!--            android:layout_marginTop="55dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--    </LinearLayout>-->
+
+
+    <Button
+        android:id="@+id/btncqllt"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="300dp"
+
+        android:layout_marginRight="59dp"
+        android:background="@drawable/custom_button"
+        android:shadowColor="@android:color/background_light"
+        android:shadowDx="-1"
+        android:shadowDy="-1"
+        android:shadowRadius="1"
+        android:text="quản lý lịch trình"
+        android:textColor="@android:color/background_light"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btncqln"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="380dp"
+        android:layout_marginRight="59dp"
+        android:background="@drawable/custom_button"
+        android:shadowColor="@android:color/background_light"
+        android:shadowDx="-1"
+        android:shadowDy="-1"
+        android:shadowRadius="1"
+        android:text="quản lý nhóm"
+        android:textColor="@android:color/background_light"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:onClick="logout"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="468dp"
+        android:layout_marginRight="86dp"
+        android:background="@drawable/custom_button"
+        android:shadowColor="@android:color/background_light"
+        android:shadowDx="-1"
+        android:shadowDy="-1"
+        android:shadowRadius="1"
+        android:text="đăng xuất"
+        android:textColor="@android:color/background_light"
+        android:textSize="19sp"
+        android:textStyle="bold" />
 </RelativeLayout>

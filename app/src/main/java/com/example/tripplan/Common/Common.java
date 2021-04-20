@@ -4,5 +4,4 @@ import com.example.tripplan.User;
 
 public class Common {
     public static User currentUser;
-
 }
