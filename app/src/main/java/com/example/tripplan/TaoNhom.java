@@ -82,6 +82,7 @@ public class TaoNhom extends AppCompatActivity implements View.OnClickListener {
 
                         // Đặt groupId vào người dùng hiện tại
                         userRef.child(Common.currentUser.getId()).child("groupId").setValue(groupId);
+                        userRef.child(memberPhoneNumber).child("groupId").setValue(groupId);
 
 
                         Toast.makeText(getApplicationContext(), "Tạo nhóm thành công !", Toast.LENGTH_SHORT).show();

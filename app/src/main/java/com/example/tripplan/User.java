@@ -14,11 +14,9 @@ public class User {
     public User() {
     }
 
-    public User(String name, String password, double latitude, double longitude) {
+    public User(String name, String password) {
         Name = name;
         Password = password;
-        Latitude = latitude;
-        Longitude = longitude;
 
 
     }
