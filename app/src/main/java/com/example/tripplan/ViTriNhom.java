@@ -14,6 +14,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.example.tripplan.Common.Common;
+import com.example.tripplan.ViewHolder.LocationHelper;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -46,6 +47,7 @@ public class ViTriNhom extends AppCompatActivity implements OnMapReadyCallback {
     private DatabaseReference groupsRef;
 
     //mới
+
     Location currentLocation;
     FusedLocationProviderClient fusedLocationProviderClient;
     private static final int REQUEST_CODE = 101;
@@ -89,6 +91,25 @@ public class ViTriNhom extends AppCompatActivity implements OnMapReadyCallback {
                 SupportMapFragment supportMapFragment = (SupportMapFragment)
                         getSupportFragmentManager().findFragmentById(R.id.google_map);
                 supportMapFragment.getMapAsync(ViTriNhom.this);
+
+// lưu vị trí hiện tại vào firebase {
+                LocationHelper helper = new LocationHelper(location.getLongitude(),
+                        location.getLatitude());
+                FirebaseDatabase.getInstance().getReference("Current Location")
+                        .setValue(helper).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if(task.isSuccessful()){
+                            Toast.makeText(ViTriNhom.this, "Location Saved",Toast.LENGTH_SHORT);
+                        }
+                        else {
+                            Toast.makeText(ViTriNhom.this, "Location Not saved", Toast.LENGTH_SHORT);
+
+                        }
+                    }
+                });
+// lưu vị trí hiện tại vào firebase }
+
 
                 LatLng latLng = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
                 MarkerOptions markerOptions = new MarkerOptions().position(latLng)

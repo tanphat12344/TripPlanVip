@@ -1,18 +1,42 @@
 package com.example.tripplan;
 
+import com.example.tripplan.ViewHolder.LocationHelper;
+
 public class User {
     private String id;
     private String Name;
     private String Password;
     private String groupId;
+    private double Latitude;
+    private double Longitude;
+
 
     public User() {
     }
 
-    public User(String name, String password) {
+    public User(String name, String password, double latitude, double longitude) {
         Name = name;
         Password = password;
+        Latitude = latitude;
+        Longitude = longitude;
 
+
+    }
+
+    public double getLatitude() {
+        return Latitude;
+    }
+
+    public void setLatitude(double latitude) {
+        Latitude = latitude;
+    }
+
+    public double getLongitude() {
+        return Longitude;
+    }
+
+    public void setLongitude(double longitude) {
+        Longitude = longitude;
     }
 
     public String getId() {
@@ -53,6 +77,8 @@ public class User {
                 "id='" + id + '\'' +
                 ", Name='" + Name + '\'' +
                 ", Password='" + Password + '\'' +
+                ", Latitude='" + Latitude + '\'' +
+                ", Longitude='" + Longitude + '\'' +
                 ", groupId=" + groupId +
                 '}';
     }
